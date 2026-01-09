@@ -14,7 +14,7 @@ export default function HeroSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <h1 className="text-5xl font-extrabold text-gray-900 dark:text-white leading-tight">Poly — micro framework para games em C</h1>
-            <p className="mt-6 text-lg text-gray-700 dark:text-gray-300">Leve, rápido e pensado para criar jogos em C. Baixe agora e experimente o fluxo de desenvolvimento otimizado para performance.</p>
+            <p className="mt-6 text-lg text-gray-700 dark:text-gray-300">Leve, rápido e pensado para criar jogos em C. Baixe agora e experimente como é aprender a programar de forma leve e divertida.</p>
 
             <div className="mt-8 flex items-center gap-4">
               <a
