@@ -18,7 +18,7 @@ export default function HeroSection() {
 
             <div className="mt-8 flex items-center gap-4">
               <a
-                href={`${GITHUB_URL}/archive/refs/heads/main.zip`}
+                href={`https://github.com/coboinashadow/poly/archive/refs/heads/main.zip`}
                 className="inline-flex items-center px-5 py-3 bg-blue-600 text-white rounded-md shadow hover:bg-blue-700"
                 target="_blank"
                 rel="noopener noreferrer"
