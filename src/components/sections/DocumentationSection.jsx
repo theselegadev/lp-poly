@@ -27,53 +27,53 @@ export default function DocumentationSection() {
   }
 
   return (
-    <section id="docs" className="py-20 bg-gray-50 dark:bg-gray-900">
+    <section id="docs" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-12">
-          <h2 className="text-4xl font-bold text-gray-900 dark:text-white">Documentação</h2>
-          <p className="mt-3 text-lg text-gray-600 dark:text-gray-400">Tudo o que você precisa para começar a criar games com Poly</p>
+          <h2 className="text-4xl font-bold text-gray-900">Documentação</h2>
+          <p className="mt-3 text-lg text-gray-600">Tudo o que você precisa para começar a criar games com Poly</p>
         </div>
 
         <div className="space-y-4">
           {/* Compilar Section */}
-          <div className="bg-white dark:bg-gray-800 rounded-lg shadow">
+          <div className="bg-white rounded-lg shadow">
             <button
               onClick={() => toggleSection('compilar')}
-              className="w-full px-6 py-4 flex items-center justify-between hover:bg-gray-50 dark:hover:bg-gray-700 transition"
+              className="w-full px-6 py-4 flex items-center justify-between hover:bg-gray-50 transition"
             >
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Compilar</h3>
-              <ChevronDown size={24} className={`text-gray-600 dark:text-gray-400 transition-transform ${openSection === 'compilar' ? 'rotate-180' : ''}`} />
+              <h3 className="text-xl font-semibold text-gray-900">Compilar</h3>
+              <ChevronDown size={24} className={`text-gray-600 transition-transform ${openSection === 'compilar' ? 'rotate-180' : ''}`} />
             </button>
             {openSection === 'compilar' && (
-              <div className="px-6 py-4 border-t border-gray-200 dark:border-gray-700">
-                <div className="space-y-4 text-gray-700 dark:text-gray-300">
-                  <p>Para gerar o arquivo executável (o jogo) basta executar o arquivo <code className="bg-gray-100 dark:bg-gray-900 px-2 py-1 rounded">compila</code></p>
+              <div className="px-6 py-4 border-t border-gray-200">
+                <div className="space-y-4 text-gray-700">
+                  <p>Para gerar o arquivo executável (o jogo) basta executar o arquivo <code className="bg-gray-100 px-2 py-1 rounded">compila</code></p>
                   
-                  <p>Esse arquivo envia o código-fonte do arquivo <code className="bg-gray-100 dark:bg-gray-900 px-2 py-1 rounded">game.c</code> para o compilador <strong>tcc</strong> (Tiny C Compiler).</p>
+                  <p>Esse arquivo envia o código-fonte do arquivo <code className="bg-gray-100 px-2 py-1 rounded">game.c</code> para o compilador <strong>tcc</strong> (Tiny C Compiler).</p>
 
-                  <div className="bg-blue-50 dark:bg-blue-900/30 border-l-4 border-blue-500 p-4 rounded">
-                    <p className="font-semibold text-blue-900 dark:text-blue-200">💡 Aviso</p>
-                    <p className="text-sm mt-2">No desenvolvimento de software é comum errar e tentar de novo. Caso haja algum erro no código, o <code className="bg-gray-100 dark:bg-gray-900 px-2 py-1 rounded">compila</code> irá falhar.</p>
+                  <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded">
+                    <p className="font-semibold text-blue-900">💡 Aviso</p>
+                    <p className="text-sm mt-2">No desenvolvimento de software é comum errar e tentar de novo. Caso haja algum erro no código, o <code className="bg-gray-100 px-2 py-1 rounded">compila</code> irá falhar.</p>
                   </div>
 
-                  <p>As regras da linguagem C são muitas e são rígidas. O <code className="bg-gray-100 dark:bg-gray-900 px-2 py-1 rounded">compila.bat</code> exibe uma descrição do erro (em inglês) caso o executável não possa ser gerado. Procurar na internet pela descrição do erro exibida é uma boa iniciativa.</p>
+                  <p>As regras da linguagem C são muitas e são rígidas. O <code className="bg-gray-100 px-2 py-1 rounded">compila.bat</code> exibe uma descrição do erro (em inglês) caso o executável não possa ser gerado. Procurar na internet pela descrição do erro exibida é uma boa iniciativa.</p>
                 </div>
               </div>
             )}
           </div>
 
           {/* Código Mínimo Section */}
-          <div className="bg-white dark:bg-gray-800 rounded-lg shadow">
+          <div className="bg-white rounded-lg shadow">
             <button
               onClick={() => toggleSection('codigo')}
-              className="w-full px-6 py-4 flex items-center justify-between hover:bg-gray-50 dark:hover:bg-gray-700 transition"
+              className="w-full px-6 py-4 flex items-center justify-between hover:bg-gray-50 transition"
             >
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Código Mínimo (entrando no modo gráfico)</h3>
-              <ChevronDown size={24} className={`text-gray-600 dark:text-gray-400 transition-transform ${openSection === 'codigo' ? 'rotate-180' : ''}`} />
+              <h3 className="text-xl font-semibold text-gray-900">Código Mínimo (entrando no modo gráfico)</h3>
+              <ChevronDown size={24} className={`text-gray-600 transition-transform ${openSection === 'codigo' ? 'rotate-180' : ''}`} />
             </button>
             {openSection === 'codigo' && (
-              <div className="px-6 py-4 border-t border-gray-200 dark:border-gray-700">
-                <pre className="bg-gray-900 dark:bg-gray-950 text-gray-100 p-4 rounded overflow-x-auto text-sm">
+              <div className="px-6 py-4 border-t border-gray-200">
+                <pre className="bg-gray-900 text-gray-100 p-4 rounded overflow-x-auto text-sm">
 {`#include "poly/poly.h"
 main(){
   setvideomode();
@@ -87,17 +87,17 @@ main(){
           </div>
 
           {/* Sobre Poly Section */}
-          <div className="bg-white dark:bg-gray-800 rounded-lg shadow">
+          <div className="bg-white rounded-lg shadow">
             <button
               onClick={() => toggleSection('sobre')}
-              className="w-full px-6 py-4 flex items-center justify-between hover:bg-gray-50 dark:hover:bg-gray-700 transition"
+              className="w-full px-6 py-4 flex items-center justify-between hover:bg-gray-50 transition"
             >
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Sobre Poly</h3>
-              <ChevronDown size={24} className={`text-gray-600 dark:text-gray-400 transition-transform ${openSection === 'sobre' ? 'rotate-180' : ''}`} />
+              <h3 className="text-xl font-semibold text-gray-900">Sobre Poly</h3>
+              <ChevronDown size={24} className={`text-gray-600 transition-transform ${openSection === 'sobre' ? 'rotate-180' : ''}`} />
             </button>
             {openSection === 'sobre' && (
-              <div className="px-6 py-4 border-t border-gray-200 dark:border-gray-700">
-                <div className="space-y-4 text-gray-700 dark:text-gray-300">
+              <div className="px-6 py-4 border-t border-gray-200">
+                <div className="space-y-4 text-gray-700">
                   <p>Esse é um software resignadamente educacional e os jogos resultantes tem limitações. Bons softwares geralmente exploram alguns limites e esse é complacente.</p>
 
                   <p>O objetivo desse software é incentivar a comunidade brasileira de jogos. Esse software atua na divulgação do fato que <strong>escrever código é legal.</strong></p>
@@ -107,21 +107,21 @@ main(){
           </div>
 
           {/* Funções Poly Section */}
-          <div className="bg-white dark:bg-gray-800 rounded-lg shadow">
+          <div className="bg-white rounded-lg shadow">
             <button
               onClick={() => toggleSection('funcoes')}
-              className="w-full px-6 py-4 flex items-center justify-between hover:bg-gray-50 dark:hover:bg-gray-700 transition"
+              className="w-full px-6 py-4 flex items-center justify-between hover:bg-gray-50 transition"
             >
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Funções Poly</h3>
-              <ChevronDown size={24} className={`text-gray-600 dark:text-gray-400 transition-transform ${openSection === 'funcoes' ? 'rotate-180' : ''}`} />
+              <h3 className="text-xl font-semibold text-gray-900">Funções Poly</h3>
+              <ChevronDown size={24} className={`text-gray-600 transition-transform ${openSection === 'funcoes' ? 'rotate-180' : ''}`} />
             </button>
             {openSection === 'funcoes' && (
-              <div className="px-6 py-4 border-t border-gray-200 dark:border-gray-700">
+              <div className="px-6 py-4 border-t border-gray-200">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {polyFunctions.map((func) => (
-                    <div key={func.name} className="bg-gray-50 dark:bg-gray-900 p-4 rounded border border-gray-200 dark:border-gray-700">
-                      <p className="font-mono text-sm text-blue-600 dark:text-blue-400 break-words">{func.signature}</p>
-                      <p className="text-sm text-gray-600 dark:text-gray-400 mt-2">{func.description}</p>
+                    <div key={func.name} className="bg-gray-50 p-4 rounded border border-gray-200">
+                      <p className="font-mono text-sm text-blue-600 break-words">{func.signature}</p>
+                      <p className="text-sm text-gray-600 mt-2">{func.description}</p>
                     </div>
                   ))}
                 </div>

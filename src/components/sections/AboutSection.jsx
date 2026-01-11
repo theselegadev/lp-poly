@@ -1,17 +1,17 @@
 
 const AboutSection = () => {
   return (
-    <section id="about" className="min-h-screen flex items-center py-20 bg-gray-100 dark:bg-gray-800">
+    <section id="about" className="min-h-screen flex items-center py-20 bg-gray-100">
       <div className="container mx-auto px-6">
         <div className="max-w-5xl mx-auto text-center">
-          <h2 className="text-4xl font-extrabold text-gray-900 dark:text-white mb-6">
+          <h2 className="text-4xl font-extrabold text-gray-900 ">
             Feito pela comunidade, para a comunidade
           </h2>
-          <p className="text-xl text-gray-700 dark:text-gray-300 mb-8">
+          <p className="text-xl text-gray-700">
             Projeto da comunidade, feito para a comunidade — incentivamos fortemente o aprendizado em programação porque é simplesmente algo muito legal.
           </p>
-          <p className="text-md text-gray-800 dark:text-gray-100 font-semibold mb-8">
-            Projeto iniciado por <span className="text-blue-600 dark:text-indigo-400">Rodrigo Schio</span>, desenvolvedor principal, com a colaboração de Matheus Seleghin, que desenvolveu a página e Mathias que contribui em c com o projeto.
+          <p className="text-md text-gray-800 ">
+            Projeto iniciado por <span className="text-blue-600">Rodrigo Schio</span>, desenvolvedor principal, com a colaboração de Matheus Seleghin, que desenvolveu a página e Mathias que contribui em c com o projeto.
           </p>
 
           <div className="flex justify-center gap-4">
