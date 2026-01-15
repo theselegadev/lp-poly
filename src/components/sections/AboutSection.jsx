@@ -11,7 +11,7 @@ const AboutSection = () => {
             Projeto da comunidade, feito para a comunidade — incentivamos fortemente o aprendizado em programação porque é simplesmente algo muito legal.
           </p>
           <p className="text-md text-gray-800 mb-6">
-            Projeto iniciado por <span className="text-blue-600">Rodrigo Schio</span>, desenvolvedor principal, com a colaboração de Matheus Seleghin, que desenvolveu a página e Mathias que contribui em c com o projeto.
+            Projeto iniciado por <span className="text-blue-500 font-semibold">Rodrigo Schio</span>, desenvolvedor principal, com a colaboração de Matheus Seleghin que desenvolveu a página. Mathias e Fabrice edificaram as bases do projeto escrevendo código C
           </p>
 
           <div className="flex justify-center gap-4">
