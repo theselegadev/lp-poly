@@ -36,7 +36,7 @@ export default function DocumentationSection() {
 
         <div className="space-y-4">
           {/* Compilar Section */}
-          <div className="bg-white rounded-lg shadow">
+          <article className="bg-white rounded-lg shadow">
             <button
               onClick={() => toggleSection('compilar')}
               className="w-full px-6 py-4 flex items-center justify-between hover:bg-gray-50 transition"
@@ -60,10 +60,10 @@ export default function DocumentationSection() {
                 </div>
               </div>
             )}
-          </div>
+          </article>
 
           {/* Código Mínimo Section */}
-          <div className="bg-white rounded-lg shadow">
+          <article className="bg-white rounded-lg shadow">
             <button
               onClick={() => toggleSection('codigo')}
               className="w-full px-6 py-4 flex items-center justify-between hover:bg-gray-50 transition"
@@ -84,10 +84,10 @@ main(){
                 </pre>
               </div>
             )}
-          </div>
+          </article>
 
           {/* Sobre Poly Section */}
-          <div className="bg-white rounded-lg shadow">
+          <article className="bg-white rounded-lg shadow">
             <button
               onClick={() => toggleSection('sobre')}
               className="w-full px-6 py-4 flex items-center justify-between hover:bg-gray-50 transition"
@@ -104,10 +104,10 @@ main(){
                 </div>
               </div>
             )}
-          </div>
+          </article>
 
           {/* Funções Poly Section */}
-          <div className="bg-white rounded-lg shadow">
+          <article className="bg-white rounded-lg shadow">
             <button
               onClick={() => toggleSection('funcoes')}
               className="w-full px-6 py-4 flex items-center justify-between hover:bg-gray-50 transition"
@@ -127,7 +127,7 @@ main(){
                 </div>
               </div>
             )}
-          </div>
+          </article>
         </div>
       </div>
     </section>

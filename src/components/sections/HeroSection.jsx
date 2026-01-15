@@ -10,7 +10,7 @@ const contributors = [
 export default function HeroSection() {
   return (
     <section id="main" className="pt-24 min-h-screen flex items-center">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <h1 className="text-5xl font-extrabold text-gray-900 leading-tight">Poly — micro framework para games em C</h1>
@@ -58,7 +58,7 @@ export default function HeroSection() {
             </div>
           </div>
         </div>
-      </div>
+      </main>
     </section>
   )
 }
