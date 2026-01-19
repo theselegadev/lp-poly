@@ -29,7 +29,7 @@ export default function Header() {
               <a href="#main" className="text-gray-700 hover:text-gray-900 transition-colors">Início</a>
               <a href="#guide" className="text-gray-700 hover:text-gray-900 transition-colors">Guia</a>
               <a 
-                href="#/docs"
+                href="docs"
                 target='_blank'
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-gray-700 hover:text-gray-900 font-medium transition-colors duration-200"
@@ -67,7 +67,7 @@ export default function Header() {
             <nav className="md:hidden pb-4 border-t border-white/10">
               <div className="flex flex-col space-y-3 pt-4">
                 <a 
-                  href="/#main"
+                  href="#main"
                   onClick={closeMenu}
                   className="text-gray-700 hover:text-gray-900 px-2 py-2 rounded-lg hover:bg-black/5 transition-colors"
                 >
@@ -81,7 +81,7 @@ export default function Header() {
                   Guia
                 </a>
                 <a 
-                  href="#/docs"
+                  href="docs"
                   target='_blank'
                   rel="noopener noreferrer"
                   onClick={closeMenu}
