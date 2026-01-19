@@ -29,7 +29,7 @@ export default function Header() {
               <a href="#main" className="text-gray-700 hover:text-gray-900 transition-colors">Início</a>
               <a href="#guide" className="text-gray-700 hover:text-gray-900 transition-colors">Guia</a>
               <a 
-                href="docs"
+                href="#/docs"
                 target='_blank'
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-gray-700 hover:text-gray-900 font-medium transition-colors duration-200"
@@ -81,7 +81,7 @@ export default function Header() {
                   Guia
                 </a>
                 <a 
-                  href="docs"
+                  href="#/docs"
                   target='_blank'
                   rel="noopener noreferrer"
                   onClick={closeMenu}
