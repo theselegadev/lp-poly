@@ -19,7 +19,7 @@ const polyFunctions = [
   { name: 'blitInt', signature: 'void blitInt(int n,int x,int y);', description: 'Desenha um inteiro na tela' }
 ]
 
-export default function DocumentationSection() {
+export default function GuideSection() {
   const [openSection, setOpenSection] = useState('compilar')
 
   const toggleSection = (section) => {
@@ -27,11 +27,11 @@ export default function DocumentationSection() {
   }
 
   return (
-    <section id="docs" className="py-20 bg-gray-50">
+    <section id="guide" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-12">
-          <h2 className="text-4xl font-bold text-gray-900">Documentação</h2>
-          <p className="mt-3 text-lg text-gray-600">Tudo o que você precisa para começar a criar games com Poly</p>
+          <h2 className="text-4xl font-bold text-gray-900">Guia inicial</h2>
+          <p className="mt-3 text-lg text-gray-600">Guia inicial para começar a aprender com o Poly</p>
         </div>
 
         <div className="space-y-4">
