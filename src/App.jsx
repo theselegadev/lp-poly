@@ -12,8 +12,8 @@ function App() {
     <Router>
       <main>
         <Routes>
-          <Route path="/lp-poly" element={<><Header /><HeroSection /><GuideSection /><AboutSection /></>} />
-          <Route path="/lp-poly/docs" element={<Docs />} />
+          <Route path="/" element={<><Header /><HeroSection /><GuideSection /><AboutSection /></>} />
+          <Route path="/docs" element={<Docs />} />
         </Routes>
       </main>
     </Router>
