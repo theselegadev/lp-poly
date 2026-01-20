@@ -249,9 +249,6 @@ while(!keystate(KEY_ESCAPE)){ //o jogo sempre continua while/enquanto o user nã
 
   const currentFunction = functions.find(f => f.id === selectedFunction);
 
-  const handleDownload = () => {
-    alert('Download iniciado!');
-  };
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -260,13 +257,13 @@ while(!keystate(KEY_ESCAPE)){ //o jogo sempre continua while/enquanto o user nã
         <div className="max-w-7xl mx-auto">
           <h1 className="text-3xl sm:text-5xl font-bold text-gray-900 mb-2 sm:mb-3 tracking-tight">Documentação Poly</h1>
           <p className="text-base sm:text-lg text-gray-600 mb-6">Guia completo de todas as funções da biblioteca gráfica</p>
-          <button 
-            onClick={handleDownload}
+          <a 
+            href={`https://github.com/coboinashadow/poly/archive/refs/heads/main.zip`}
             className="inline-flex items-center gap-2 sm:gap-3 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold py-2.5 sm:py-3 px-4 sm:px-6 rounded-lg transition-all duration-300 transform hover:-translate-y-0.5 shadow-md hover:shadow-lg text-sm sm:text-base"
           >
             <Download size={18} />
             Baixar Projeto
-          </button>
+          </a>
         </div>
       </div>
 
